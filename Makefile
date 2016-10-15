@@ -1,4 +1,4 @@
 CFLAGS=-Wall -ansi -pedantic
 
-fattoriale: fattoriale.o
-fattoriale.o: fattoriale.c
+somma: somma.o
+somma.o: somma.c

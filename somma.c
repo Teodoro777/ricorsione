@@ -31,8 +31,5 @@ int somma (int a, int b)
   if (b == 0)
     return a;
 
-  /* se b non e' zero bisogna ridurre il problema
-   * della somma di a e b a qualcosa di piu' semplice
-   */
-  return b + somma(a + b);
+  return b + somma(a, 0);
 }

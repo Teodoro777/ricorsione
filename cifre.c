@@ -13,14 +13,21 @@ int main()
   printf("Inserisci un numero: ");
   scanf("%d", &num);
 
-  printf("%d\n", cifre(num));
+  cifre(num);
 
   return 0;
 }
 
 int cifre(int num) 
 {
-  if (num == 0) 
+  if (num == 0) {
+    printf("\n");
     return 0;
+  }
+  else { 
+    printf("%d", num % 10);
+    num /= 10;
+    cifre(num);
+  }
 }
 

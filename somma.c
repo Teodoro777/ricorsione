@@ -31,5 +31,5 @@ int somma (int a, int b)
   if (b == 0)
     return a;
 
-  return b + somma(a, 0);
+  return 1 + somma(a, b-1);
 }

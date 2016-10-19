@@ -13,12 +13,12 @@ int main()
   do {
     printf("Inserisci la base: ");
     scanf("%d", &b);
-  } while (b <= 0);
+  } while (b < 0);
 
   do { 
     printf("Inserisci l'esponente: ");
     scanf("%d", &e);
-  } while (e <= 0);
+  } while (e < 0);
 
   printf("%d^%d = %d\n", b, e, pot(b, e));
 
@@ -27,7 +27,13 @@ int main()
 
 int pot(int b, int e)
 {
-  if (e == 1) 
+  if (b == 0)
+    return 0;
+
+  else if (e == 0)
+    return 1;
+
+  else if (e == 1) 
     return b;
   else {
     return b * pot(b, e-1);

@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-int cifre(int num);
+void cifre(int num);
 
 int main()
 {
@@ -18,11 +18,10 @@ int main()
   return 0;
 }
 
-int cifre(int num) 
+void cifre(int num) 
 {
   if (num == 0) {
     printf("\n");
-    return 0;
   }
   else { 
     printf("%d", num % 10);

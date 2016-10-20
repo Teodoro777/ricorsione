@@ -18,7 +18,7 @@ void hanoi(int num_dischi, int paletto_iniziale, int paletto_destinazione, int p
     printf("%d -> %d\n", paletto_iniziale, paletto_destinazione);
   else {
    hanoi(num_dischi - 1, paletto_iniziale, paletto_destinazione, paletto_temporaneo);
-   printf("%d -> %d\n", paletto_iniziale, paletto_destinazione);
-   hanoi(num_dischi - 1, paletto_temporaneo, paletto_destinazione, paletto_iniziale);
+   printf("%d -> %d\n", paletto_iniziale, paletto_temporaneo);
+   hanoi(num_dischi - 1, paletto_destinazione, paletto_temporaneo, paletto_iniziale);
   }
 }

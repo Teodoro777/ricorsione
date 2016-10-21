@@ -8,7 +8,6 @@
 #include <stdio.h>
 
 int somma(int x, int y);
-int somma_helper(int y, int partial_sum);
 
 int main()
 {
@@ -37,17 +36,3 @@ int somma(int x, int y)
 
   return somma(x-1, y+1);
 }
-
-/*
-int somma(int x, int y)
-{
-  return somma_helper(y, x);
-}
-
-int somma_helper(int y, int partial_sum)
-{
-  if (y==0) return partial_sum;
-
-  return somma_helper(y-1, partial_sum+1);
-}
-*/

@@ -39,13 +39,3 @@ int pot(int b, int e)
     return b * pot(b, e-1);
   }
 }
-
-
-
-
-
-
-
-
-
-
